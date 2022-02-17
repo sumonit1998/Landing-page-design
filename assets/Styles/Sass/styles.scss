@@ -1,0 +1,138 @@
+/*
+Author       : Shumon Ahammed
+Template Name: Gitanjali Code Rhythm - Bootstrap Template
+Version      : 1.0
+*/
+/*============================
+   [Table Of css ]
+   
+1.Header
+
+
+=============================*/
+$white: #ffffff;
+$black: #000000;
+$grey: #808080;
+$primary: #f05200;
+$primary-light: #ff843b;
+$primary-dark: #b51800;
+$secondary: #211034;
+$secondary-light: #4a365e;
+$secondary-dark: #00000f;
+
+
+/*-------------------- Default css --------------------*/
+
+a {
+    text-decoration: none;
+    color: #00000f;
+    &hover{
+        text-decoration: none;
+    }
+}
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+/*---------- Header -------------*/
+.header {
+    &.main-header {
+        position: absolute;
+        z-index: 1050;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .nav-header {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;	
+        background-color: transparent;	
+        border: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: space-between;
+        position: relative;
+        height: 70px;
+        padding: 0 20px;
+        margin-bottom: 0;
+        #btn-mobile {
+            display: none;
+            margin-right: 30px;
+            i{
+                font-size: 30px;
+                color: $primary;
+            }
+        }
+        .logo {
+            img {
+                width: 150px;
+            }
+        }
+    }
+    .menu-header {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+        height: 60px;
+        padding: 0 20px;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: space-between;
+        border-bottom: 1px solid #f0f0f0;
+        display: none;
+    }
+    .main-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            a {
+                display: block;
+                font-size: 15px;
+                font-weight: 500;
+                color: #544D85;
+            }
+            &.active > {
+                a {
+                    color: #5f4be2;
+                    border-color: #5F4BE2;
+                }
+            }
+            .submenu {
+                li {
+                    position: relative;
+                    a {
+                        display: block;
+                        padding: 10px 15px;
+                        clear: both;
+                        white-space: nowrap;
+                        font-size: 14px;
+                        color: #544D85;
+                        -webkit-transition: all .35s ease;
+                        transition: all .35s ease;
+                        width: 100%;
+                        border-top: 1px solid #f0f0f0;
+                    }
+                }
+                
+            }
+        }
+    }
+}

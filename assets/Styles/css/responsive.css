@@ -1,0 +1,62 @@
+@media (min-width: 992px) {
+  .main-nav > li {
+    margin-right: 24px;
+    display: block;
+    position: relative;
+  }
+  .main-nav > li > a {
+    line-height: 68px;
+    padding: 0 !important;
+    border-top: 4px solid transparent;
+  }
+  .main-nav > li > a > i {
+    font-size: 12px;
+    margin-left: 3px;
+    color: #FE9445;
+  }
+  .main-nav > li > ul {
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: block;
+    font-size: 14px;
+    left: 0;
+    margin: 0;
+    min-width: 200px;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    top: 100%;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  .main-nav > li .submenu::before {
+    border: 7px solid #fff;
+    border-color: transparent transparent #fff #fff;
+    -webkit-box-shadow: -2px 2px 2px -1px rgba(0, 0, 0, 0.1);
+            box-shadow: -2px 2px 2px -1px rgba(0, 0, 0, 0.1);
+    content: "";
+    left: 45px;
+    position: absolute;
+    top: 2px;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  .main-nav > li .submenu li:first-child a {
+    border-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav > li {
+    margin-right: 30px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
