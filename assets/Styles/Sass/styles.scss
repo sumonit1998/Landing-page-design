@@ -37,6 +37,59 @@ ul {
         list-style: none;
     }
 }
+/*--------------------- button customization  -----------------------*/
+.btn-primary {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+        color: $white;
+        background-color: $primary;
+        border-color: $primary;
+        opacity: .9;
+    }
+    &:focus {
+        box-shadow: none;
+        color: $white;
+        background-color: $primary;
+        border-color: $primary;
+    }
+    &:active {
+        box-shadow: none;
+        color: $white;
+        background-color: $primary;
+        border-color: $primary;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+.btn-secondary {
+    color: $white;
+    background-color: $secondary;
+    border-color: $secondary;
+    &:hover {
+        color: $white;
+        background-color: $secondary;
+        border-color: $secondary;
+        opacity: .9;
+    }
+    &:focus {
+        box-shadow: none;
+        color: $white;
+        background-color: $secondary;
+        border-color: $secondary;
+    }
+    &:active {
+        box-shadow: none;
+        color: $white;
+        background-color: $secondary;
+        border-color: $secondary;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
 
 /*---------- Header -------------*/
 .header {
@@ -132,6 +185,35 @@ ul {
                     }
                 }
                 
+            }
+        }
+    }
+    .header-navbar-right {
+        li {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            padding-right: 15px;
+            justify-content: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            .btn-login {
+                color: #FFFFFF;
+                padding: 8px 13px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 14px;
+                min-width: 109px;
+                transform: skew(-25deg);
+                border-radius: 2px;
+                p {
+                    transform: skew(25deg);
+                    margin: 0;
+                    padding: 0;
+                }
             }
         }
     }

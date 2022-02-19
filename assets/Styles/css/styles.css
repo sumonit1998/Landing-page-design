@@ -29,6 +29,75 @@ ul li {
   list-style: none;
 }
 
+/*--------------------- button customization  -----------------------*/
+.btn-primary {
+  color: #ffffff;
+  background-color: #f05200;
+  border-color: #f05200;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #f05200;
+  border-color: #f05200;
+  opacity: .9;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ffffff;
+  background-color: #f05200;
+  border-color: #f05200;
+}
+
+.btn-primary:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ffffff;
+  background-color: #f05200;
+  border-color: #f05200;
+}
+
+.btn-primary:active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-secondary {
+  color: #ffffff;
+  background-color: #211034;
+  border-color: #211034;
+}
+
+.btn-secondary:hover {
+  color: #ffffff;
+  background-color: #211034;
+  border-color: #211034;
+  opacity: .9;
+}
+
+.btn-secondary:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ffffff;
+  background-color: #211034;
+  border-color: #211034;
+}
+
+.btn-secondary:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ffffff;
+  background-color: #211034;
+  border-color: #211034;
+}
+
+.btn-secondary:active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /*---------- Header -------------*/
 .header.main-header {
   position: absolute;
@@ -126,5 +195,38 @@ ul li {
   transition: all .35s ease;
   width: 100%;
   border-top: 1px solid #f0f0f0;
+}
+
+.header .header-navbar-right li {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 15px;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.header .header-navbar-right li .btn-login {
+  color: #FFFFFF;
+  padding: 8px 13px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 109px;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  border-radius: 2px;
+}
+
+.header .header-navbar-right li .btn-login p {
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=styles.css.map */
