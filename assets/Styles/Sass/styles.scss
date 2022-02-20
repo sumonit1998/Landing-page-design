@@ -92,6 +92,21 @@ ul {
 }
 
 /*---------- Header -------------*/
+.sidebar-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1040;
+}
+.menu-opened {
+    .menu-wrapper {
+        transform: translateX(0) !important;
+    }
+}
 .header {
     &.main-header {
         position: absolute;
@@ -147,6 +162,11 @@ ul {
         -ms-flex-pack: space-between;
         border-bottom: 1px solid #f0f0f0;
         display: none;
+        .menu-logo {
+            img {
+                width: 150px;
+            }
+        }
     }
     .main-nav {
         display: -webkit-box;
@@ -183,8 +203,33 @@ ul {
                         width: 100%;
                         border-top: 1px solid #f0f0f0;
                     }
+                    &.has-submenu > {
+                        a {
+                            &:after {
+                                content: "\f054";
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                position: absolute;
+                                right: 15px;
+                                top: 12px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
                 }
                 
+            }
+            &.has-submenu {
+                &:hover > {
+                    .submenu {
+                        visibility: visible;
+                        opacity: 1;
+                        margin-top: 0;
+                        -webkit-transform: translateY(0);
+                        -ms-transform: translateY(0);
+                        transform: translateY(0);
+                    }
+                }
             }
         }
     }
@@ -208,7 +253,7 @@ ul {
                 font-size: 14px;
                 min-width: 109px;
                 transform: skew(-25deg);
-                border-radius: 2px;
+                border-radius: 2px 5px;
                 p {
                     transform: skew(25deg);
                     margin: 0;
