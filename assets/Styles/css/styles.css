@@ -10,7 +10,40 @@ Version      : 1.0
 
 
 =============================*/
+/*----------------- Fonts --------------------*/
+@font-face {
+  font-family: 'Tactic Round';
+  src: local("Tactic Round Medium"), local("Tactic-Round-Medium"), url("./../webfonts/TacticRound-Med.woff2") format("woff2"), url("./../webfonts/TacticRound-Med.woff") format("woff"), url("./../webfonts/TacticRound-Med.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*------------------ Google Fonts --------------------*/
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjxAwXjeu.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /*-------------------- Default css --------------------*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato';
+}
+
 a {
   text-decoration: none;
   color: #00000f;
@@ -115,7 +148,12 @@ ul li {
           transform: translateX(0) !important;
 }
 
-.header.main-header {
+.gcrhythm-header {
+  /*---------- main menu --------------*/
+  /*--------------- header right ---------------*/
+}
+
+.gcrhythm-header.main-header {
   position: absolute;
   z-index: 1050;
   top: 0;
@@ -125,7 +163,7 @@ ul li {
   transition: all 0.3s ease 0s;
 }
 
-.header .nav-header {
+.gcrhythm-header .nav-header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -146,21 +184,21 @@ ul li {
   margin-bottom: 0;
 }
 
-.header .nav-header #btn-mobile {
+.gcrhythm-header .nav-header #btn-mobile {
   display: none;
   margin-right: 30px;
 }
 
-.header .nav-header #btn-mobile i {
+.gcrhythm-header .nav-header #btn-mobile i {
   font-size: 30px;
   color: #f05200;
 }
 
-.header .nav-header .logo img {
-  width: 150px;
+.gcrhythm-header .nav-header .logo img {
+  width: 250px;
 }
 
-.header .menu-header {
+.gcrhythm-header .menu-header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -175,11 +213,11 @@ ul li {
   display: none;
 }
 
-.header .menu-header .menu-logo img {
+.gcrhythm-header .menu-header .gcrhythm-logo img {
   width: 150px;
 }
 
-.header .main-nav {
+.gcrhythm-header .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,23 +226,27 @@ ul li {
   padding: 0;
 }
 
-.header .main-nav li a {
+.gcrhythm-header .main-nav li {
+  /*------------ submenu css ------------*/
+}
+
+.gcrhythm-header .main-nav li a {
   display: block;
   font-size: 15px;
   font-weight: 500;
   color: #544D85;
 }
 
-.header .main-nav li.active > a {
+.gcrhythm-header .main-nav li.active > a {
   color: #5f4be2;
   border-color: #5F4BE2;
 }
 
-.header .main-nav li .submenu li {
+.gcrhythm-header .main-nav li .submenu li {
   position: relative;
 }
 
-.header .main-nav li .submenu li a {
+.gcrhythm-header .main-nav li .submenu li a {
   display: block;
   padding: 10px 15px;
   clear: both;
@@ -217,7 +259,7 @@ ul li {
   border-top: 1px solid #f0f0f0;
 }
 
-.header .main-nav li .submenu li.has-submenu > a:after {
+.gcrhythm-header .main-nav li .submenu li.has-submenu > a:after {
   content: "\f054";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -227,7 +269,7 @@ ul li {
   font-size: 13px;
 }
 
-.header .main-nav li.has-submenu:hover > .submenu {
+.gcrhythm-header .main-nav li.has-submenu:hover > .submenu {
   visibility: visible;
   opacity: 1;
   margin-top: 0;
@@ -235,7 +277,11 @@ ul li {
   transform: translateY(0);
 }
 
-.header .header-navbar-right li {
+.gcrhythm-header .header-navbar-right {
+  display: none;
+}
+
+.gcrhythm-header .header-navbar-right li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -249,7 +295,7 @@ ul li {
   -ms-flex-pack: center;
 }
 
-.header .header-navbar-right li .btn-login {
+.gcrhythm-header .header-navbar-right li .btn-login {
   color: #FFFFFF;
   padding: 8px 13px;
   text-align: center;
@@ -258,10 +304,9 @@ ul li {
   min-width: 109px;
   -webkit-transform: skew(-25deg);
           transform: skew(-25deg);
-  border-radius: 2px 5px;
 }
 
-.header .header-navbar-right li .btn-login p {
+.gcrhythm-header .header-navbar-right li .btn-login p {
   -webkit-transform: skew(25deg);
           transform: skew(25deg);
   margin: 0;

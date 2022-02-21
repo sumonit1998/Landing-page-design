@@ -2,7 +2,7 @@
   .sidebar-overlay.opened {
     display: block;
   }
-  .header .nav-header .logo-header {
+  .gcrhythm-header .nav-header .logo-header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -10,10 +10,10 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  .header .nav-header #btn-mobile {
+  .gcrhythm-header .nav-header #btn-mobile {
     display: inline-block;
   }
-  .header .menu-wrapper {
+  .gcrhythm-header .menu-wrapper {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -31,12 +31,12 @@
     transition: all 0.4s;
     background-color: #5F4BE2;
   }
-  .header .menu-wrapper .menu-header {
+  .gcrhythm-header .menu-wrapper .menu-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header .menu-wrapper .main-nav {
+  .gcrhythm-header .menu-wrapper .main-nav {
     padding: 0;
     -ms-flex-direction: column;
     -webkit-box-orient: vertical;
@@ -46,25 +46,25 @@
     margin-bottom: 0;
     list-style: none;
   }
-  .header .menu-wrapper .main-nav > li {
+  .gcrhythm-header .menu-wrapper .main-nav > li {
     border-bottom: 1px solid #8a7ddc;
     margin-left: 0;
   }
-  .header .menu-wrapper .main-nav > li + li {
+  .gcrhythm-header .menu-wrapper .main-nav > li + li {
     margin-left: 0;
   }
-  .header .menu-wrapper .main-nav > li > a {
+  .gcrhythm-header .menu-wrapper .main-nav > li > a {
     line-height: 1.5;
     padding: 15px 20px !important;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
   }
-  .header .menu-wrapper .main-nav > li > a i {
+  .gcrhythm-header .menu-wrapper .main-nav > li > a i {
     float: right;
     margin-top: 5px;
   }
-  .header .menu-wrapper .main-nav ul {
+  .gcrhythm-header .menu-wrapper .main-nav ul {
     background-color: #5F4BE2;
     display: none;
     list-style: none;
@@ -176,6 +176,9 @@
     -webkit-box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.15);
             box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.15);
     border-color: transparent #fff #fff transparent;
+  }
+  .header-navbar-right {
+    display: block !important;
   }
 }
 

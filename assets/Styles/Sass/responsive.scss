@@ -14,7 +14,8 @@
             display: block;
         }
     }
-    .header {
+    
+    .gcrhythm-header {
         .nav-header {
             .logo-header {
                 -webkit-box-align: center;
@@ -229,6 +230,9 @@
                 
             }
         }
+    }
+    .header-navbar-right {
+        display: block !important;
     }
    
     

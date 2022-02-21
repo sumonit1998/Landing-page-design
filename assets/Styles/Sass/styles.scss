@@ -21,7 +21,42 @@ $secondary-light: #4a365e;
 $secondary-dark: #00000f;
 
 
+
+/*----------------- Fonts --------------------*/
+@font-face {
+    font-family: 'Tactic Round';
+    src: local('Tactic Round Medium'), local('Tactic-Round-Medium'),
+        url('./../webfonts/TacticRound-Med.woff2') format('woff2'),
+        url('./../webfonts/TacticRound-Med.woff') format('woff'),
+        url('./../webfonts/TacticRound-Med.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*------------------ Google Fonts --------------------*/
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
 /*-------------------- Default css --------------------*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato';
+}
 
 a {
     text-decoration: none;
@@ -107,7 +142,7 @@ ul {
         transform: translateX(0) !important;
     }
 }
-.header {
+.gcrhythm-header {
     &.main-header {
         position: absolute;
         z-index: 1050;
@@ -146,7 +181,7 @@ ul {
         }
         .logo {
             img {
-                width: 150px;
+                width: 250px;
             }
         }
     }
@@ -162,12 +197,13 @@ ul {
         -ms-flex-pack: space-between;
         border-bottom: 1px solid #f0f0f0;
         display: none;
-        .menu-logo {
+        .gcrhythm-logo {
             img {
                 width: 150px;
             }
         }
     }
+    /*---------- main menu --------------*/
     .main-nav {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -181,6 +217,7 @@ ul {
                 font-size: 15px;
                 font-weight: 500;
                 color: #544D85;
+
             }
             &.active > {
                 a {
@@ -188,6 +225,7 @@ ul {
                     border-color: #5F4BE2;
                 }
             }
+            /*------------ submenu css ------------*/
             .submenu {
                 li {
                     position: relative;
@@ -233,7 +271,9 @@ ul {
             }
         }
     }
+    /*--------------- header right ---------------*/
     .header-navbar-right {
+        display: none;
         li {
             -webkit-box-align: center;
             -ms-flex-align: center;
@@ -253,7 +293,6 @@ ul {
                 font-size: 14px;
                 min-width: 109px;
                 transform: skew(-25deg);
-                border-radius: 2px 5px;
                 p {
                     transform: skew(25deg);
                     margin: 0;
