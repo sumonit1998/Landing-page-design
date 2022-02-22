@@ -99,14 +99,14 @@ ul li {
 
 .btn-secondary {
   color: #ffffff;
-  background-color: #211034;
-  border-color: #211034;
+  background-color: #00000f;
+  border-color: #00000f;
 }
 
 .btn-secondary:hover {
   color: #ffffff;
-  background-color: #211034;
-  border-color: #211034;
+  background-color: #00000f;
+  border-color: #00000f;
   opacity: .9;
 }
 
@@ -114,16 +114,16 @@ ul li {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #ffffff;
-  background-color: #211034;
-  border-color: #211034;
+  background-color: #00000f;
+  border-color: #00000f;
 }
 
 .btn-secondary:active {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #ffffff;
-  background-color: #211034;
-  border-color: #211034;
+  background-color: #00000f;
+  border-color: #00000f;
 }
 
 .btn-secondary:active:focus {
@@ -190,12 +190,12 @@ ul li {
 }
 
 .gcrhythm-header .nav-header #btn-mobile i {
-  font-size: 30px;
+  font-size: 24px;
   color: #f05200;
 }
 
 .gcrhythm-header .nav-header .logo img {
-  width: 250px;
+  width: 200px;
 }
 
 .gcrhythm-header .menu-header {
@@ -232,14 +232,14 @@ ul li {
 
 .gcrhythm-header .main-nav li a {
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  color: #544D85;
+  color: #00000f;
 }
 
 .gcrhythm-header .main-nav li.active > a {
-  color: #5f4be2;
-  border-color: #5F4BE2;
+  color: #f05200;
+  border-color: #f05200;
 }
 
 .gcrhythm-header .main-nav li .submenu li {
@@ -252,7 +252,7 @@ ul li {
   clear: both;
   white-space: nowrap;
   font-size: 14px;
-  color: #544D85;
+  color: #00000f;
   -webkit-transition: all .35s ease;
   transition: all .35s ease;
   width: 100%;
@@ -311,5 +311,15 @@ ul li {
           transform: skew(25deg);
   margin: 0;
   padding: 0;
+}
+
+/*------------- gcrhythm banner Section ---------------*/
+.gcrhythm-banner-1 {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

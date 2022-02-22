@@ -7,7 +7,6 @@ Version      : 1.0
 (function($) {
     "use strict";
     // Sidebar
-	
 	if($(window).width() <= 991){
         var Sidemenu = function() {
             this.$menuItem = $('.main-nav a');

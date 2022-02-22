@@ -1,103 +1,20 @@
-// X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+/*
+Author       : Shumon Ahammed
+Template Name: Gitanjali Code Rhythm - Bootstrap Template
+Version      : 1.0
+*/
+//color code 
 
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-    .sidebar-overlay {
-        &.opened {
-            display: block;
-        }
-    }
-    
-    .gcrhythm-header {
-        .nav-header {
-            .logo-header {
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                display: -webkit-inline-box;
-                display: -ms-inline-flexbox;
-                display: inline-flex;
-            }
-            #btn-mobile {
-                display: inline-block;
-            }
-        }
-        .menu-wrapper {
-            order: 3;
-            width: 260px;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            overflow-x: hidden;
-            overflow-y: auto;
-            z-index: 1060;
-            transform: translateX(-260px);
-            transition: all 0.4s;
-            background-color: #5F4BE2;
-            .menu-header {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-            }
-            .main-nav {
-                padding: 0;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                padding-left: 0;
-                margin-bottom: 0;
-                list-style: none;
-                > li {
-                    border-bottom: 1px solid #8a7ddc;
-                    margin-left: 0;
-                    &+ li {
-                        margin-left: 0;
-                    }
-                    > a {
-                        line-height: 1.5;
-                        padding: 15px 20px !important;
-                        color: #fff;
-                        font-size: 14px;
-                        font-weight: 500;
-                        i {
-                            float: right;
-                            margin-top: 5px;
-                        }
-                    }
-                    
-                }
-                ul {
-                    background-color: #5F4BE2;
-                    display: none;
-                    list-style: none;
-                    margin: 0;
-                    padding-left: 0;
-                }
-            }
-        }
-        
-    }
-    
-    
-}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-    .nav-header {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {}
+$white: #ffffff;
+$black: #000000;
+$grey: #808080;
+$primary: #f05200;
+$primary-light: #ff843b;
+$primary-dark: #b51800;
+$secondary: #211034;
+$secondary-light: #4a365e;
+$secondary-dark: #00000f;
+$secondary-rgba-2: rgba(33, 16, 52, 0.2);
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -106,14 +23,18 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
+    /*------- header right -------------*/
+    .header-navbar-right {
+        display: block !important;
+    }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+    /*----------------- main menu --------------------*/
     .main-nav > {
         li {
-            margin-right: 24px;
+            margin-right: 15px;
             display: block;
             position: relative;
             > {
@@ -122,9 +43,9 @@
                     padding: 0 !important;
                     border-top: 4px solid transparent;
                     > i {
-                        font-size: 12px;
+                        font-size: 16px;
                         margin-left: 3px;
-                        color: #FE9445;
+                        color: $primary;
                     }
                 }
                  
@@ -133,7 +54,7 @@
                 display: none;
             }
             > ul {
-                background-color: #fff;
+                background-color: $white;
                 border-radius: 5px;
                 box-shadow: 0 0 3px  rgba(0, 0, 0, 0.1);
                 display: block;
@@ -155,8 +76,8 @@
             }
             .submenu{
                 &::before {
-                    border: 7px solid #fff;
-                    border-color: transparent transparent #fff #fff;
+                    border: 7px solid $white;
+                    border-color: transparent transparent $white $white;
                     box-shadow: -2px 2px 2px -1px rgba(0, 0, 0, 0.1);
                     content: "";
                     left: 45px;
@@ -174,7 +95,7 @@
                 }
                 li {
                     ul {
-                        background-color: #fff;
+                        background-color: $white;
                         border-radius: 5px;
                         box-shadow: 0 0 3px  rgba(0, 0, 0, 0.1);
                         display: block;
@@ -223,7 +144,7 @@
                             top: 20px;
                             margin-left: -35px;
                             box-shadow: 1px 1px 0 0 rgba(0,0,0,.15);
-                            border-color: transparent #fff #fff transparent;
+                            border-color: transparent $white $white transparent;
                         }
                     }
                 }
@@ -231,9 +152,7 @@
             }
         }
     }
-    .header-navbar-right {
-        display: block !important;
-    }
+    
    
     
 }
@@ -245,6 +164,7 @@
             margin-right: 30px;
         }
     }
+    
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -253,3 +173,109 @@
 }
 
 
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .sidebar-overlay {
+        &.opened {
+            display: block;
+        }
+    }
+    
+    .gcrhythm-header {
+        .nav-header {
+            .logo-header {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+            }
+            #btn-mobile {
+                display: inline-block;
+            }
+        }
+        .menu-wrapper {
+            order: 3;
+            width: 260px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            z-index: 1060;
+            transform: translateX(-260px);
+            transition: all 0.4s;
+            background-color: $secondary-dark;
+            .menu-header {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+            .main-nav {
+                padding: 0;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+                > li {
+                    border-bottom: 1px solid $secondary;
+                    margin-left: 0;
+                    &+ li {
+                        margin-left: 0;
+                    }
+                    > a {
+                        line-height: 1.5;
+                        padding: 15px 20px !important;
+                        color: $white;
+                        font-size: 14px;
+                        font-weight: 500;
+                        i {
+                            float: right;
+                            margin-top: 5px;
+                        }
+                    }
+                    .submenu > {
+                        li {
+                            a {
+                                color: $white;
+                            }
+                        }
+                    }
+                    
+                }
+                ul {
+                    background-color: $secondary-rgba-2;
+                    display: none;
+                    list-style: none;
+                    margin: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+        
+    }
+    
+    
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .nav-header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {}

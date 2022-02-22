@@ -19,6 +19,7 @@ $primary-dark: #b51800;
 $secondary: #211034;
 $secondary-light: #4a365e;
 $secondary-dark: #00000f;
+$secondary-rgba-2: rgba(33, 16, 52, 0.2);
 
 
 
@@ -101,25 +102,25 @@ ul {
 }
 .btn-secondary {
     color: $white;
-    background-color: $secondary;
-    border-color: $secondary;
+    background-color: $secondary-dark;
+    border-color: $secondary-dark;
     &:hover {
         color: $white;
-        background-color: $secondary;
-        border-color: $secondary;
+        background-color: $secondary-dark;
+        border-color: $secondary-dark;
         opacity: .9;
     }
     &:focus {
         box-shadow: none;
         color: $white;
-        background-color: $secondary;
-        border-color: $secondary;
+        background-color: $secondary-dark;
+        border-color: $secondary-dark;
     }
     &:active {
         box-shadow: none;
         color: $white;
-        background-color: $secondary;
-        border-color: $secondary;
+        background-color: $secondary-dark;
+        border-color: $secondary-dark;
         &:focus {
             box-shadow: none;
         }
@@ -175,13 +176,13 @@ ul {
             display: none;
             margin-right: 30px;
             i{
-                font-size: 30px;
+                font-size: 24px;
                 color: $primary;
             }
         }
         .logo {
             img {
-                width: 250px;
+                width: 200px;
             }
         }
     }
@@ -214,15 +215,15 @@ ul {
         li {
             a {
                 display: block;
-                font-size: 15px;
+                font-size: 16px;
                 font-weight: 500;
-                color: #544D85;
+                color: $secondary-dark;
 
             }
             &.active > {
                 a {
-                    color: #5f4be2;
-                    border-color: #5F4BE2;
+                    color: $primary;
+                    border-color: $primary;
                 }
             }
             /*------------ submenu css ------------*/
@@ -235,7 +236,7 @@ ul {
                         clear: both;
                         white-space: nowrap;
                         font-size: 14px;
-                        color: #544D85;
+                        color: $secondary-dark;
                         -webkit-transition: all .35s ease;
                         transition: all .35s ease;
                         width: 100%;
@@ -301,4 +302,13 @@ ul {
             }
         }
     }
+}
+/*------------- gcrhythm banner Section ---------------*/
+.gcrhythm-banner-1 {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
