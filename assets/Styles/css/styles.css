@@ -62,6 +62,24 @@ ul li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 /*--------------------- button customization  -----------------------*/
 .btn-primary {
   color: #ffffff;
@@ -99,14 +117,14 @@ ul li {
 
 .btn-secondary {
   color: #ffffff;
-  background-color: #00000f;
-  border-color: #00000f;
+  background-color: #000028;
+  border-color: #000028;
 }
 
 .btn-secondary:hover {
   color: #ffffff;
-  background-color: #00000f;
-  border-color: #00000f;
+  background-color: #000028;
+  border-color: #000028;
   opacity: .9;
 }
 
@@ -114,16 +132,16 @@ ul li {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #ffffff;
-  background-color: #00000f;
-  border-color: #00000f;
+  background-color: #000028;
+  border-color: #000028;
 }
 
 .btn-secondary:active {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #ffffff;
-  background-color: #00000f;
-  border-color: #00000f;
+  background-color: #000028;
+  border-color: #000028;
 }
 
 .btn-secondary:active:focus {
@@ -234,7 +252,7 @@ ul li {
   display: block;
   font-size: 16px;
   font-weight: 500;
-  color: #00000f;
+  color: #000028;
 }
 
 .gcrhythm-header .main-nav li.active > a {
@@ -252,7 +270,7 @@ ul li {
   clear: both;
   white-space: nowrap;
   font-size: 14px;
-  color: #00000f;
+  color: #000028;
   -webkit-transition: all .35s ease;
   transition: all .35s ease;
   width: 100%;
@@ -296,7 +314,7 @@ ul li {
 }
 
 .gcrhythm-header .header-navbar-right li .btn-login {
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 13px;
   text-align: center;
   font-weight: 600;
@@ -321,5 +339,197 @@ ul li {
   background-position: center;
   padding-top: 150px;
   padding-bottom: 50px;
+}
+
+/*--------------- gcrhythm footer section ------------*/
+.gcrhythm-footer {
+  padding: 50px 0px;
+  background-color: #000028;
+  /*-------- footer contact ----------*/
+  /*---------------- footer menu -----------------*/
+  /*-------------- footer subscribe --------------*/
+}
+
+.gcrhythm-footer .footer-contact {
+  padding: 5px 20px;
+  color: #ffffff;
+}
+
+.gcrhythm-footer .footer-contact img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.gcrhythm-footer .footer-contact p {
+  line-height: 20px;
+}
+
+.gcrhythm-footer .footer-contact p.desc {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.gcrhythm-footer .footer-contact p.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gcrhythm-footer .footer-contact p i {
+  margin-right: 10px;
+  color: #ff843b;
+}
+
+.gcrhythm-footer .footer-menu {
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+}
+
+.gcrhythm-footer .footer-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.gcrhythm-footer .footer-menu ul h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.gcrhythm-footer .footer-menu ul li {
+  margin: 6px 0px;
+}
+
+.gcrhythm-footer .footer-menu ul li a {
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.gcrhythm-footer .footer-menu ul li a:hover {
+  color: #ff843b;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.gcrhythm-footer .subscribe {
+  padding: 5px 20px;
+  /*------ Newslatter ----------*/
+  /*----------- Follow Us -----------*/
+}
+
+.gcrhythm-footer .subscribe h5 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+
+.gcrhythm-footer .subscribe .newslatter-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gcrhythm-footer .subscribe .newslatter-input .input-flied {
+  background-color: #ffffff;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+}
+
+.gcrhythm-footer .subscribe .newslatter-input .input-flied .form-control {
+  border-radius: none;
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+  background-color: transparent;
+  border: none;
+}
+
+.gcrhythm-footer .subscribe .newslatter-input .btn {
+  color: #ffffff;
+  padding: 8px 13px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  background-color: #f05200;
+  border-radius: 0px;
+  margin-left: 10px;
+}
+
+.gcrhythm-footer .subscribe .newslatter-input .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.gcrhythm-footer .subscribe .newslatter-input .btn p {
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+  margin: 0;
+  padding: 0;
+}
+
+.gcrhythm-footer .subscribe .follow-us h5 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul {
+  margin: 0;
+  padding: 0;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul li {
+  display: inline-block;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul li:not(:first-child) {
+  margin-left: 5px;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul li a {
+  color: #ff843b;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul li a:hover {
+  opacity: .9;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul li a.facebook {
+  padding: 3px 7px;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul li a.youtube {
+  padding: 3px 6px;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul li a.twitter {
+  padding: 3px 8px;
+}
+
+.gcrhythm-footer .subscribe .follow-us ul li a.instagram {
+  padding: 3px 8px;
+}
+
+.gcrhythm-footer hr {
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 /*# sourceMappingURL=styles.css.map */

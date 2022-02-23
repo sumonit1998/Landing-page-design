@@ -16,10 +16,11 @@ $grey: #808080;
 $primary: #f05200;
 $primary-light: #ff843b;
 $primary-dark: #b51800;
-$secondary: #211034;
-$secondary-light: #4a365e;
-$secondary-dark: #00000f;
+$secondary: #221d50;
+$secondary-light: #4e447d;
+$secondary-dark: #000028;
 $secondary-rgba-2: rgba(33, 16, 52, 0.2);
+$white-opacity-3: rgba(255,255,255,.3);
 
 
 
@@ -71,6 +72,22 @@ ul {
     padding: 0;
     li {
         list-style: none;
+    }
+}
+img {
+    width: 100%;
+}
+.btn {
+    &:hover {
+        opacity: .9;
+    }
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+input {
+    &:focus {
+        box-shadow: none !important;
     }
 }
 /*--------------------- button customization  -----------------------*/
@@ -287,7 +304,7 @@ ul {
             -webkit-justify-content: center;
             -ms-flex-pack: center;
             .btn-login {
-                color: #FFFFFF;
+                color: $white;
                 padding: 8px 13px;
                 text-align: center;
                 font-weight: 600;
@@ -311,4 +328,149 @@ ul {
     background-position: center;
     padding-top: 150px;
     padding-bottom: 50px;
+}
+
+
+/*--------------- gcrhythm footer section ------------*/
+.gcrhythm-footer {
+    padding: 50px 0px;
+    background-color: $secondary-dark;
+    /*-------- footer contact ----------*/
+    .footer-contact {
+        padding: 5px 20px;
+        color: $white;
+        img {
+            filter: brightness(0) invert(1);
+            width: 200px;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 20px;
+            &.desc {
+                font-size: 16px;
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
+            &.location {
+                display: flex;
+            }
+            i {
+                margin-right: 10px;
+                color: $primary-light;
+            }
+        }
+    }
+    /*---------------- footer menu -----------------*/
+    .footer-menu {
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $white;
+        ul {
+            margin: 0;
+            padding: 0;
+            h5 {
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            li {
+                margin: 6px 0px;
+                a {
+                    color: $white;
+                    transition: all .3s;
+                    &:hover {
+                        color: $primary-light;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+        
+    }
+    /*-------------- footer subscribe --------------*/
+    .subscribe {
+        padding: 5px 20px;
+        h5 {
+            color: $white;
+            font-weight: 600;
+            margin-bottom: 26px;
+        }
+        /*------ Newslatter ----------*/
+        .newslatter-input {
+            display: flex;
+            .input-flied {                
+                background-color: $white;
+                transform: skew(-25deg);
+                .form-control {
+                    border-radius: none;
+                    transform: skew(25deg);
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+            .btn {
+                color: $white;
+                padding: 8px 13px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 14px;
+                transform: skew(-25deg);
+                background-color: $primary;
+                border-radius: 0px;
+                margin-left: 10px;
+                &:focus {
+                    box-shadow: none;
+                }
+                p {
+                    transform: skew(25deg);
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        /*----------- Follow Us -----------*/
+        .follow-us {
+            h5 {
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    &:not(:first-child) {
+                        margin-left: 5px;
+                    }
+                    a {
+                        color: $primary-light;
+                        transition: all .3s;
+                        font-size: 20px;
+                        border: 1px solid $white-opacity-3;
+                        border-radius: 5px;
+                        &:hover {
+                            opacity: .9;
+                            transition: all .3s;
+                        }
+                        &.facebook {
+                            padding: 3px 7px;
+                        }
+                        &.youtube {
+                            padding: 3px 6px;
+                        }
+                        &.twitter {
+                            padding: 3px 8px;
+                        }
+                        &.instagram {
+                            padding: 3px 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hr {
+        border: 1px solid $white-opacity-3;
+    }
 }

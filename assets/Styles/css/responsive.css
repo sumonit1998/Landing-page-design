@@ -147,7 +147,7 @@ Version      : 1.0
             transform: translateX(-260px);
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-    background-color: #00000f;
+    background-color: #000028;
   }
   .gcrhythm-header .menu-wrapper .menu-header {
     display: -webkit-box;
@@ -165,7 +165,7 @@ Version      : 1.0
     list-style: none;
   }
   .gcrhythm-header .menu-wrapper .main-nav > li {
-    border-bottom: 1px solid #211034;
+    border-bottom: 1px solid #221d50;
     margin-left: 0;
   }
   .gcrhythm-header .menu-wrapper .main-nav > li + li {
