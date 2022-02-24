@@ -90,6 +90,33 @@ input {
         box-shadow: none !important;
     }
 }
+
+/*----------- button setting --------*/
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: 0px;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+
+    p {
+        margin-bottom: 2px;
+    }
+}
 /*--------------------- button customization  -----------------------*/
 .btn-primary {
     color: $white;
@@ -167,9 +194,12 @@ input {
         top: 0;
         left: 0;
         width: 100%;
-        -webkit-transition: all 0.3s ease 0s;
-        -o-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
+        &.gcrhthm-sticky {
+            transition: all 0.3s ease 0s;
+            background-color: $secondary;
+            position: fixed;
+        }
     }
     .nav-header {
         -webkit-box-align: center;
@@ -204,15 +234,11 @@ input {
         }
     }
     .menu-header {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         background-color: #fff;
         height: 60px;
         padding: 0 20px;
         justify-content: space-between;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: space-between;
         border-bottom: 1px solid #f0f0f0;
         display: none;
         .gcrhythm-logo {
@@ -234,7 +260,7 @@ input {
                 display: block;
                 font-size: 16px;
                 font-weight: 500;
-                color: $secondary-dark;
+                color: $white;
 
             }
             &.active > {
@@ -322,25 +348,57 @@ input {
 }
 /*------------- gcrhythm banner Section ---------------*/
 .gcrhythm-banner-1 {
-    background-image: url();
+    background-image: url(./../../images/bg-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 150px;
-    padding-bottom: 50px;
+    .banner-left {
+        padding-top: 220px;
+        padding-bottom: 160px;
+        color: $white;
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .btn {
+            transform: skew(-25deg);
+            min-width: 120px;
+            p {
+                transform: skew(25deg);
+            }
+        }
+        
+    }
+    .banner-right {
+        text-align: right;
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        img {
+            max-width: 350px;
+        }
+    }
 }
 
 
 /*--------------- gcrhythm footer section ------------*/
 .gcrhythm-footer {
-    padding: 50px 0px;
+    padding: 50px 0px 20px 0px;
     background-color: $secondary-dark;
     /*-------- footer contact ----------*/
     .footer-contact {
         padding: 5px 20px;
         color: $white;
         img {
-            filter: brightness(0) invert(1);
+            // filter: brightness(0) invert(1);
             width: 200px;
             margin-bottom: 30px;
         }
@@ -402,6 +460,7 @@ input {
             .input-flied {                
                 background-color: $white;
                 transform: skew(-25deg);
+                width: 80%;
                 .form-control {
                     border-radius: none;
                     transform: skew(25deg);
@@ -470,7 +529,24 @@ input {
             }
         }
     }
-    hr {
-        border: 1px solid $white-opacity-3;
+    /*------------- copyright section -------------*/
+    .copyright {
+        margin-top: 20px;
+        border-top: 1px solid rgba(100,100,100,.5);
+        padding-top: 20px;
+        p {
+            margin-bottom: 0px;
+            color: $white;
+            font-size: 16px;
+            a {
+                color: $primary-light;
+                transition: all .3s;
+                &:hover {
+                    color: $white;
+                    transition: all .3s;
+                }
+            }
+        }
     }
 }
+

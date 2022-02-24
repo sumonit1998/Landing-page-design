@@ -80,6 +80,34 @@ input:focus {
           box-shadow: none !important;
 }
 
+/*----------- button setting --------*/
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: 0px;
+  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.btn p {
+  margin-bottom: 2px;
+}
+
 /*--------------------- button customization  -----------------------*/
 .btn-primary {
   color: #ffffff;
@@ -181,6 +209,13 @@ input:focus {
   transition: all 0.3s ease 0s;
 }
 
+.gcrhythm-header.main-header.gcrhthm-sticky {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #221d50;
+  position: fixed;
+}
+
 .gcrhythm-header .nav-header {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -218,15 +253,14 @@ input:focus {
 
 .gcrhythm-header .menu-header {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   height: 60px;
   padding: 0 20px;
   -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
   border-bottom: 1px solid #f0f0f0;
   display: none;
 }
@@ -252,7 +286,7 @@ input:focus {
   display: block;
   font-size: 16px;
   font-weight: 500;
-  color: #000028;
+  color: #ffffff;
 }
 
 .gcrhythm-header .main-nav li.active > a {
@@ -333,21 +367,63 @@ input:focus {
 
 /*------------- gcrhythm banner Section ---------------*/
 .gcrhythm-banner-1 {
-  background-image: url();
+  background-image: url(./../../images/bg-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 150px;
-  padding-bottom: 50px;
+}
+
+.gcrhythm-banner-1 .banner-left {
+  padding-top: 220px;
+  padding-bottom: 160px;
+  color: #ffffff;
+}
+
+.gcrhythm-banner-1 .banner-left h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.gcrhythm-banner-1 .banner-left h4 {
+  font-weight: 700;
+}
+
+.gcrhythm-banner-1 .banner-left p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.gcrhythm-banner-1 .banner-left .btn {
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  min-width: 120px;
+}
+
+.gcrhythm-banner-1 .banner-left .btn p {
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+}
+
+.gcrhythm-banner-1 .banner-right {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+
+.gcrhythm-banner-1 .banner-right img {
+  max-width: 350px;
 }
 
 /*--------------- gcrhythm footer section ------------*/
 .gcrhythm-footer {
-  padding: 50px 0px;
+  padding: 50px 0px 20px 0px;
   background-color: #000028;
   /*-------- footer contact ----------*/
   /*---------------- footer menu -----------------*/
   /*-------------- footer subscribe --------------*/
+  /*------------- copyright section -------------*/
 }
 
 .gcrhythm-footer .footer-contact {
@@ -356,8 +432,6 @@ input:focus {
 }
 
 .gcrhythm-footer .footer-contact img {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
   width: 200px;
   margin-bottom: 30px;
 }
@@ -445,6 +519,7 @@ input:focus {
   background-color: #ffffff;
   -webkit-transform: skew(-25deg);
           transform: skew(-25deg);
+  width: 80%;
 }
 
 .gcrhythm-footer .subscribe .newslatter-input .input-flied .form-control {
@@ -529,7 +604,27 @@ input:focus {
   padding: 3px 8px;
 }
 
-.gcrhythm-footer hr {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.gcrhythm-footer .copyright {
+  margin-top: 20px;
+  border-top: 1px solid rgba(100, 100, 100, 0.5);
+  padding-top: 20px;
+}
+
+.gcrhythm-footer .copyright p {
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.gcrhythm-footer .copyright p a {
+  color: #ff843b;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.gcrhythm-footer .copyright p a:hover {
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 /*# sourceMappingURL=styles.css.map */

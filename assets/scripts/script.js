@@ -6,6 +6,18 @@ Version      : 1.0
 
 (function($) {
     "use strict";
+
+    //sticky header
+    $(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+        if (scroll > 150) {
+            $(".gcrhythm-header").addClass("gcrhthm-sticky");
+        }
+        else{
+            $(".gcrhythm-header").removeClass("gcrhthm-sticky");  	
+        }
+	})
+
     // Sidebar
 	if($(window).width() <= 991){
         var Sidemenu = function() {
