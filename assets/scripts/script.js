@@ -8,15 +8,23 @@ Version      : 1.0
     "use strict";
 
     //sticky header
-    $(window).scroll(function(){
-		var scroll = $(window).scrollTop();
-        if (scroll > 150) {
-            $(".gcrhythm-header").addClass("gcrhthm-sticky");
-        }
-        else{
-            $(".gcrhythm-header").removeClass("gcrhthm-sticky");  	
-        }
-	})
+    // $(window).scroll(function(){
+	// 	var scroll = $(window).scrollTop();
+    //     if (scroll > 150) {
+    //         $(".gcrhythm-header").addClass("gcrhthm-sticky");
+            
+    //     }
+    //     else{
+    //         $(".gcrhythm-header").removeClass("gcrhthm-sticky");  	
+    //     }
+	// })
+    $(window).scroll(function() {
+        var sticky = $('.gcrhythm-header'),
+          scroll = $(window).scrollTop();
+    
+        if (scroll >= 100) sticky.addClass('gcrhthm-sticky');
+        else sticky.removeClass('gcrhthm-sticky');
+      });
 
     // Sidebar
 	if($(window).width() <= 991){

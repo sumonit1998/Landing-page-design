@@ -21,6 +21,7 @@ $secondary-light: #4e447d;
 $secondary-dark: #000028;
 $secondary-rgba-2: rgba(33, 16, 52, 0.2);
 $white-opacity-3: rgba(255,255,255,.3);
+$header-color: #0B0B45;
 
 
 
@@ -90,7 +91,15 @@ input {
         box-shadow: none !important;
     }
 }
-
+/*---------- smooth scrolling -------------*/
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-30px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
 /*----------- button setting --------*/
 .btn {
     display: inline-block;
@@ -194,11 +203,13 @@ input {
         top: 0;
         left: 0;
         width: 100%;
+        min-height: 75px;
         transition: all 0.3s ease 0s;
         &.gcrhthm-sticky {
             transition: all 0.3s ease 0s;
-            background-color: $secondary;
+            background-color: $secondary-dark;
             position: fixed;
+            animation: smoothScroll 1s forwards;
         }
     }
     .nav-header {

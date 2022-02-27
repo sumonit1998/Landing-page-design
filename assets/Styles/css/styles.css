@@ -80,6 +80,28 @@ input:focus {
           box-shadow: none !important;
 }
 
+/*---------- smooth scrolling -------------*/
+@-webkit-keyframes smoothScroll {
+  0% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes smoothScroll {
+  0% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
 /*----------- button setting --------*/
 .btn {
   display: inline-block;
@@ -205,6 +227,7 @@ input:focus {
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 75px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -212,8 +235,10 @@ input:focus {
 .gcrhythm-header.main-header.gcrhthm-sticky {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background-color: #221d50;
+  background-color: #000028;
   position: fixed;
+  -webkit-animation: smoothScroll 1s forwards;
+          animation: smoothScroll 1s forwards;
 }
 
 .gcrhythm-header .nav-header {
