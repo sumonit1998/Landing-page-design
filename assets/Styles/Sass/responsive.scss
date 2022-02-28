@@ -216,6 +216,7 @@ $secondary-rgba-2: rgba(33, 16, 52, 0.2);
             transform: translateX(-260px);
             transition: all 0.4s;
             background-color: $secondary-dark;
+            height: 100vh;
             .menu-header {
                 display: -webkit-box;
                 display: -ms-flexbox;

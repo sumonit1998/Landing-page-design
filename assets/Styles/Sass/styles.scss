@@ -180,6 +180,59 @@ input {
     }
 }
 
+/*--------------- Primary css ------------------*/
+.heading {
+    text-align: center;
+    h3 {
+        font-weight: 700;
+        color: $secondary-dark;
+    }
+    .three-dots {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        .dot-1, .dot-3 {
+            color: $secondary-dark;
+            font-size: 10px;
+        }
+        .dot-2 {
+            margin: 0px 5px;
+            font-size: 14px;
+            color: $primary;
+        }
+    }
+}
+/*----------------- margin ---------------*/
+/*---------------- margin top -------------*/
+.mt-5 {margin-top: 5px;}
+.mt-10 {margin-top: 10px;}
+.mt-15 {margin-top: 15px;}
+.mt-20 {margin-top: 20px;}
+.mt-25 {margin-top: 25px;}
+.mt-30 {margin-top: 30px;}
+.mt-40 {margin-top: 4px;}
+.mt-50 {margin-top: 50px;}
+.mt-60 {margin-top: 60px;}
+.mt-70 {margin-top: 70px;}
+.mt-80 {margin-top: 80px;}
+.mt-90 {margin-top: 90px;}
+.mt-100 {margin-top: 100px;}
+/*-------------- margin bottom ---------*/
+.mb-5 {margin-bottom: 5px;}
+.mb-10 {margin-bottom: 10px;}
+.mb-15 {margin-bottom: 15px;}
+.mb-20 {margin-bottom: 20px;}
+.mb-25 {margin-bottom: 25px;}
+.mb-30 {margin-bottom: 30px;}
+.mb-40 {margin-bottom: 4px;}
+.mb-50 {margin-bottom: 50px;}
+.mb-60 {margin-bottom: 60px;}
+.mb-70 {margin-bottom: 70px;}
+.mb-80 {margin-bottom: 80px;}
+.mb-90 {margin-bottom: 90px;}
+.mb-100 {margin-bottom: 100px;}
+
 /*---------- Header -------------*/
 .sidebar-overlay {
     background-color: rgba(0, 0, 0, 0.6);
@@ -294,7 +347,11 @@ input {
                         -webkit-transition: all .35s ease;
                         transition: all .35s ease;
                         width: 100%;
-                        border-top: 1px solid #f0f0f0;
+                        border-top: 1px solid $grey;
+                        &:hover {
+                            padding-left: 20px;
+                            letter-spacing: 0.5px;
+                        }
                     }
                     &.has-submenu > {
                         a {
@@ -307,6 +364,7 @@ input {
                                 top: 12px;
                                 font-size: 13px;
                             }
+
                         }
                     }
                 }
@@ -395,6 +453,75 @@ input {
         bottom: -1px;
         img {
             max-width: 350px;
+        }
+    }
+}
+
+/*------------------ gcrhythm about us ---------------*/
+.gcrhythm-about {
+    padding: 50px 0px;
+    .heading {
+        h3 {
+            color: $grey;
+        }
+    }
+    .about-card {
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+        border: 1px solid rgba(100,100,100,.2);
+        border-radius: 5px;
+        min-height: 320px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.16), 
+                0 8px 8px rgba(0,0,0,0.20);
+
+        .abut-icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            border: 2px dotted $primary;
+            border-block-start-style: none;
+            border-block-end-style: none;
+            margin-top: 10px;
+                       
+            .icon {
+                font-size: 26px;
+                color: $white;
+                width: 70px;
+                height: 70px;
+                border-radius: 50px;
+                background: $primary-light;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .3s ease;
+            }
+        }
+        &:hover {
+            .abut-icon {
+                .icon{
+                    background: $primary;
+                    transition: all .3s ease;
+                }
+            }
+        }
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+            color: $grey;
+            padding: 0px 10px;
+        }
+        .desc {
+            font-size: 17px;
+            color: $grey;
+            padding: 5px 10px;
+            text-align: revert;
         }
     }
 }
