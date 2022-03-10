@@ -116,10 +116,19 @@ Version      : 1.0
   }
 }
 
+@media (max-width: 1199.98px) {
+  .nav-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 @media (max-width: 991.98px) {
+  /*----- Sidebar Overlay --------*/
   .sidebar-overlay.opened {
     display: block;
   }
+  /*------------------ main header ----------------*/
   .gcrhythm-header .nav-header .logo-header {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -193,12 +202,33 @@ Version      : 1.0
     margin: 0;
     padding-left: 0;
   }
+  /*---- top banner section ------*/
+  .gcrhythm-banner-1 {
+    /*----------  banner left ---------*/
+    /*------------ banner right -------------*/
+  }
+  .gcrhythm-banner-1 .banner-left {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .gcrhythm-banner-1 .banner-left h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .gcrhythm-banner-1 .banner-right img {
+    max-width: 200px;
+  }
 }
 
-@media (max-width: 1199.98px) {
-  .nav-header {
-    padding-left: 20px;
-    padding-right: 20px;
+@media (max-width: 767.98px) {
+  /*---- banner section ------*/
+  .gcrhythm-banner-1 .banner-left {
+    padding-top: 120px;
+    padding-bottom: 0px;
+  }
+  .gcrhythm-banner-1 .banner-right {
+    position: relative;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

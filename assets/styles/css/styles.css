@@ -209,6 +209,10 @@ input:focus {
   color: #000028;
 }
 
+.heading p {
+  margin-bottom: 5px;
+}
+
 .heading .three-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,7 +227,7 @@ input:focus {
 }
 
 .heading .three-dots .dot-1, .heading .three-dots .dot-3 {
-  color: #000028;
+  color: #808080;
   font-size: 10px;
 }
 
@@ -338,6 +342,113 @@ input:focus {
 
 .mb-100 {
   margin-bottom: 100px;
+}
+
+/*------------------ padding --------------*/
+/*---------------- padding top -------------*/
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-40 {
+  padding-top: 4px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+/*-------------- padding bottom ---------*/
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-40 {
+  padding-bottom: 4px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
 }
 
 /*---------- Header -------------*/
@@ -542,6 +653,8 @@ input:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /*------------- Banner left ------------*/
+  /*------------- Banner right ---------------*/
 }
 
 .gcrhythm-banner-1 .banner-left {
@@ -569,6 +682,7 @@ input:focus {
   -webkit-transform: skew(-25deg);
           transform: skew(-25deg);
   min-width: 120px;
+  margin-left: 15px;
 }
 
 .gcrhythm-banner-1 .banner-left .btn p {
@@ -593,6 +707,11 @@ input:focus {
 }
 
 .gcrhythm-about .heading h3 {
+  color: #808080;
+}
+
+.gcrhythm-about .heading p {
+  font-size: 16px;
   color: #808080;
 }
 
@@ -665,6 +784,272 @@ input:focus {
   color: #808080;
   padding: 5px 10px;
   text-align: revert;
+}
+
+/*-------------------- gcrhythm feature course -------------------*/
+.gcrhythm-course .course-banner {
+  padding: 100px 0px;
+  background-image: url(./../../images/course.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.gcrhythm-course .course-banner .course-banner-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 11, 24, 0.8);
+}
+
+.gcrhythm-course .course-banner .heading {
+  position: relative;
+}
+
+.gcrhythm-course .course-banner .heading h3 {
+  color: #ffffff;
+}
+
+.gcrhythm-course .course-banner .heading p {
+  color: #ffffff;
+}
+
+.gcrhythm-course .course-banner .heading .three-dots .dot-1, .gcrhythm-course .course-banner .heading .three-dots .dot-3 {
+  color: #ffffff;
+}
+
+.gcrhythm-course .course-content {
+  margin-top: -80px;
+  position: relative;
+  background: #ffffff;
+  padding: 30px 0px;
+}
+
+.gcrhythm-course .course-content .owl-carousel {
+  padding: 0px 20px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .owl-stage-outer {
+  padding: 20px 0px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item {
+  border: 1px solid rgba(33, 16, 52, 0.2);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px 0px 10px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-head {
+  position: relative;
+  overflow: hidden;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-head img {
+  border-radius: 5px 5px 0px 0px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-head .price {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #f05200;
+  font-size: 16px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item:hover .item-head img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body {
+  padding: 10px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body .category .category-item {
+  display: inline-block;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body .category .category-item a {
+  font-size: 13px;
+  padding: 5px 20px;
+  background-color: #f05200;
+  border: 1px solid #f05200;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 50px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body .category .category-item a:hover {
+  background-color: transparent;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #f05200;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body .category .rating {
+  font-size: 14px;
+  color: #f05200;
+  font-weight: 600;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000028;
+  padding-bottom: 10px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body a:hover {
+  color: #f05200;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 33.333333%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  font-size: 14px;
+  color: #808080;
+  font-weight: 500;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-body ul li i {
+  margin-right: 5px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer {
+  border-top: 2px dotted rgba(33, 16, 52, 0.2);
+  padding: 5px 10px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-avatar img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-avatar h4 {
+  margin-bottom: 0px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-avatar h4 a {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 10px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-avatar h4 a:hover {
+  color: #f05200;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-social a {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-social a.facebook {
+  color: #3b5998;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-social a.twitter {
+  color: #00acee;
+}
+
+.gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-social a.instagram {
+  color: #3f729b;
 }
 
 /*--------------- gcrhythm footer section ------------*/

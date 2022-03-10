@@ -54,7 +54,6 @@ Version      : 1.0
         init();
         }
 	// Mobile menu sidebar overlay
-	
 	$('body').append('<div class="sidebar-overlay"></div>');
 	$(document).on('click', '#btn-mobile', function() {
 		$('main-wrapper').toggleClass('slide-nav');
@@ -73,5 +72,32 @@ Version      : 1.0
 		$('html').removeClass('menu-opened');
 		$('.sidebar-overlay').removeClass('opened');
 		$('main-wrapper').removeClass('slide-nav');
+	});
+
+    //course owl carousel
+    $('#course-slider').owlCarousel( {
+		loop: false,
+		margin: 30,
+		autoplay: false,
+		dots:false,
+        nav:true,
+		autoplayTimeout: 8500,
+		smartSpeed: 450,
+  	    navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1,
+                nav:true
+			},
+			768: {
+				items: 2,
+                nav:true
+			},
+			1170: {
+				items: 3,
+                nav:true,
+                mouseDrag: false
+			}
+		}
 	});
 })(jQuery);
