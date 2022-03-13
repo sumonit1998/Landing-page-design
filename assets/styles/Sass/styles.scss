@@ -127,6 +127,7 @@ input {
         margin-bottom: 2px;
     }
 }
+
 /*--------------------- button customization  -----------------------*/
 .btn-primary {
     color: $white;
@@ -606,6 +607,7 @@ input {
         padding: 30px 0px;
         .owl-carousel {
             padding: 0px 20px;
+            position: relative;
             .owl-stage-outer {
                 padding: 20px 0px;
             }
@@ -662,8 +664,8 @@ input {
                             a {
                                 font-size: 13px;
                                 padding: 5px 20px;
-                                background-color: $primary;
-                                border: 1px solid $primary;
+                                background-color: $primary-light;
+                                border: 1px solid $primary-light;
                                 color: $white;
                                 font-weight: 500;
                                 border-radius: 50px;
@@ -671,7 +673,7 @@ input {
                                 &:hover {
                                     background-color: transparent;
                                     transition: all .3s ease;
-                                    color: $primary;
+                                    color: $primary-light;
                                 }
                             }
                         }
@@ -686,10 +688,20 @@ input {
                         font-weight: 600;
                         line-height: 1.5;
                         color: $secondary-dark;
-                        padding-bottom: 10px;
+                        padding-bottom: 5px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1; 
+                        line-clamp: 1; 
+                        -webkit-box-orient: vertical;
                         &:hover {
                             color: $primary;
                         }
+                    }
+                    p {
+                        font-size: 14px;
+                        color: $grey;
                     }
                     ul {
                         display: flex;
@@ -703,6 +715,9 @@ input {
                             font-size: 14px;
                             color: $grey;
                             font-weight: 500;
+                            &:not(:first-child) {
+                                margin-left: 5px;
+                            }
                             i {
                                 margin-right: 5px;
                             }
@@ -757,6 +772,43 @@ input {
                     }
                 }
                               
+            }
+            /*------------------- owl carousel nav ---------------- */
+            .owl-nav {
+                margin-top: 0px;
+                button {
+                    display: inline-block;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background: transparent;
+                    text-indent: -9999px;
+                    border-top: 2.5px solid $primary;
+                    border-left: 2.5px solid $primary;
+                    transition: all 250ms ease;
+                    text-decoration: none;
+                    color: transparent;
+                    &:hover {
+                        border-top: 2.5px solid $secondary-dark;
+                        border-left: 2.5px solid $secondary-dark;
+                        transition: all 250ms ease;
+                    }
+                }
+                .owl-prev {
+                    transform: rotate(-45deg);
+                    left: 0;
+                    bottom: 50%;
+                    margin-left: -5px;
+                   
+                }
+                .owl-next {
+                    transform: rotate(135deg);
+                    right: 0;
+                    bottom: 50%;
+                    margin-right: -5px;
+                   
+                }
+                
             }
         }
     }

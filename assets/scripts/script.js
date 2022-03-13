@@ -83,7 +83,7 @@ Version      : 1.0
         nav:true,
 		autoplayTimeout: 8500,
 		smartSpeed: 450,
-  	    navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+  	    navText: ['',''],
 		responsive: {
 			0: {
 				items: 1,

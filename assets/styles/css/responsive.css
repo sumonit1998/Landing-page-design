@@ -219,6 +219,10 @@ Version      : 1.0
   .gcrhythm-banner-1 .banner-right img {
     max-width: 200px;
   }
+  /*-------------------- gcrhythm feature course -------------------*/
+  .gcrhythm-course .course-content .owl-carousel .gcr-item {
+    padding: 0 !important;
+  }
 }
 
 @media (max-width: 767.98px) {
