@@ -12,7 +12,7 @@ Version      : 1.0
 =============================*/
 $white: #ffffff;
 $black: #000000;
-$grey: #808080;
+$gray: #808080;
 $primary: #f05200;
 $primary-light: #ff843b;
 $primary-dark: #b51800;
@@ -198,7 +198,7 @@ input {
         text-align: center;
         justify-content: center;
         .dot-1, .dot-3 {
-            color: $grey;
+            color: $gray;
             font-size: 10px;
         }
         .dot-2 {
@@ -268,6 +268,15 @@ input {
 .pb-90 {padding-bottom: 90px;}
 .pb-100 {padding-bottom: 100px;}
 
+/*----------- set classs -------------*/
+.gcrhythm-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,11,24,0.9);
+}
 /*---------- Header -------------*/
 .sidebar-overlay {
     background-color: rgba(0, 0, 0, 0.6);
@@ -382,7 +391,7 @@ input {
                         -webkit-transition: all .35s ease;
                         transition: all .35s ease;
                         width: 100%;
-                        border-top: 1px solid $grey;
+                        border-top: 1px solid $gray;
                         &:hover {
                             padding-left: 20px;
                             letter-spacing: 0.5px;
@@ -497,14 +506,14 @@ input {
 
 /*------------------ gcrhythm about us ---------------*/
 .gcrhythm-about {
-    padding: 50px 0px;
+    padding: 70px 0px 60px 0px;
     .heading {
         h3 {
-            color: $grey;
+            color: $gray;
         }
         p {
             font-size: 16px;
-            color: $grey;
+            color: $gray;
         }
     }
     .about-card {
@@ -556,12 +565,12 @@ input {
         .title {
             font-size: 22px;
             font-weight: 600;
-            color: $grey;
+            color: $gray;
             padding: 0px 10px;
         }
         .desc {
             font-size: 17px;
-            color: $grey;
+            color: $gray;
             padding: 5px 10px;
             text-align: revert;
         }
@@ -569,7 +578,7 @@ input {
 }
 /*-------------------- gcrhythm feature course -------------------*/
 .gcrhythm-course {
-    
+    /*------ banner -----*/
     .course-banner {
         padding: 100px 0px;
         background-image: url(./../../images/course.jpg);
@@ -577,6 +586,7 @@ input {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        /*------ Overlay -----*/
         .course-banner-overlay {
             position: absolute;
             left: 0;
@@ -585,6 +595,7 @@ input {
             height: 100%;
             background-color: $bg-overlay-color;
         }
+        /*------ heading -----*/
         .heading {
             position: relative;
             h3 {
@@ -600,17 +611,20 @@ input {
             }
         }
     }
+    /*------ course-content -----*/
     .course-content {
         margin-top: -80px;
         position: relative;
         background: $white;
         padding: 30px 0px;
+        /*------ owl-carousel -----*/
         .owl-carousel {
             padding: 0px 20px;
             position: relative;
             .owl-stage-outer {
                 padding: 20px 0px;
             }
+            /*------ carousel item-----*/
             .gcr-item {
                 border: 1px solid $secondary-rgba-2;
                 border-radius: 5px;
@@ -619,6 +633,7 @@ input {
                 0 4px 4px rgba(0,0,0,0.16), 
                 0 8px 8px rgba(0,0,0,0.20);
                 padding: 10px 10px 0px 10px;
+                /*------ carousel item head -----*/
                 .item-head {
                     position: relative;
                     overflow: hidden;
@@ -651,6 +666,7 @@ input {
                         }
                     }
                 }
+                /*------ carousel item body-----*/
                 .item-body {
                     padding: 10px;
                     .category {
@@ -701,7 +717,7 @@ input {
                     }
                     p {
                         font-size: 14px;
-                        color: $grey;
+                        color: $gray;
                     }
                     ul {
                         display: flex;
@@ -713,7 +729,7 @@ input {
                             width: 33.333333%;
                             flex: 0 0 33.333333%;
                             font-size: 14px;
-                            color: $grey;
+                            color: $gray;
                             font-weight: 500;
                             &:not(:first-child) {
                                 margin-left: 5px;
@@ -724,6 +740,7 @@ input {
                         }
                     }
                 }
+                /*------ carousel item footer -----*/
                 .item-footer {
                     border-top: 2px dotted $secondary-rgba-2;
                     padding: 5px 10px;
@@ -752,6 +769,7 @@ input {
                                 }
                             }
                         }
+                        /*------ carousel item social -----*/
                         .trainer-social {
                             display: flex;
                             align-items: center;
@@ -813,7 +831,200 @@ input {
         }
     }
 }
+/*------------------- Students Review -----------------*/
+.students-review {
+    padding: 70px 0px 60px 0px;
+    /*------------------- Students Review heading -----------------*/
+    .heading {
+        h3 {
+            color: $gray;
+        }
+        p {
+            font-size: 16px;
+            color: $gray;
+        }
+    }
+    /*------ carousel warp -----*/
+    .carousel-warp {
+        padding: 50px 0px 20px 0px;
+        /*------ carousel -----*/
+        .owl-carousel {
+            padding: 0px 20px;
+            position: relative;
+            /*------ carousel item -----*/
+            .reviw-item {
+                border: 1px solid $secondary-rgba-2;
+                padding: 10px;
+                border-radius: 5px;
+                /*------ carousel item head -----*/
+                .item-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    align-content: center;
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100px;
+                        margin-right: 20px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                        line-height: 20px;
+                        color: $secondary;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        line-clamp: 1; 
+                        -webkit-box-orient: vertical;
+                    }
+                    span {
+                        font-size: 13px;
+                        color: $secondary;
+                    }
+                    /*------ rating -----*/
+                    .rating {
+                        background-color: $primary-light;
+                        color: $white;
+                        width: 60px;
+                        display: flex;
+                        align-items: center;
+                        padding: 2px 5px;
+                        justify-content: center;
+                        border-radius: 50px;
+                        margin-left: auto;
+                        i {
+                            font-size: 16px;
+                            margin-right: 3px;
+                        }
+                        span {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: $white;
+                        }
+                    }
+                }
+                /*------ carousel item body -----*/
+                .item-body {
+                    margin-top: 20px;
+                    p {
+                        margin-bottom: 0;
+                        font-size: 16px;
+                        color: $secondary;
+                        text-align: justify;
+                    }
+                    
+                }
+            }
+            /*------------------- owl carousel nav ---------------- */
+            .owl-nav {
+                margin-top: 0px;
+                button {
+                    display: inline-block;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background: transparent;
+                    text-indent: -9999px;
+                    border-top: 2.5px solid $primary;
+                    border-left: 2.5px solid $primary;
+                    transition: all 250ms ease;
+                    text-decoration: none;
+                    color: transparent;
+                    &:hover {
+                        border-top: 2.5px solid $secondary-dark;
+                        border-left: 2.5px solid $secondary-dark;
+                        transition: all 250ms ease;
+                    }
+                }
+                .owl-prev {
+                    transform: rotate(-45deg);
+                    left: 0;
+                    bottom: 40%;
+                    margin-left: -5px;
+                   
+                }
+                .owl-next {
+                    transform: rotate(135deg);
+                    right: 0;
+                    bottom: 40%;
+                    margin-right: -5px;
+                   
+                }
+                
+            }
+        }
+    }
+}
+/*------------------- Students Review -----------------*/
 
+/*--------- coundown project ------------*/
+.gcrhythm-coundown-project {
+    padding: 70px 0px;
+    background-image: url(./../../images/coun-project.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: $white;
+    .gcr-counter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        .gcr-count-up {
+            text-align: center;
+            p {
+                font-size: 40px;
+                color: $primary-light;
+                margin-bottom: 0px;
+            }
+            .gcr-countdown {
+                font-size: 36px;
+                color: $primary-light;
+                font-weight: 600;
+                letter-spacing: 5px;
+            }
+            h5 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+/*----------------------- gcrhythm question section ---------------*/
+.gcrhythm-question {
+    padding: 40px 20px;
+    background-color: $primary-light;
+    h4 {
+        font-weight: 600;
+        color: $white;
+    }
+    p {
+        color: $white;
+    }
+    a {
+        background-color: $secondary-dark;
+        color: $white;
+        font-size: 18px;
+        font-weight: 600;
+        transform: skew(-25deg);
+        transition: all .3s ease;
+        border: 2px solid $secondary-dark;
+        p {
+            transform: skew(25deg);
+        }
+        &:hover {
+            opacity: 1;
+            background-color: transparent;
+            border: 2px solid $secondary-dark;
+            transition: all .3s ease;
+        }
+    }
+}
 
 /*--------------- gcrhythm footer section ------------*/
 .gcrhythm-footer {

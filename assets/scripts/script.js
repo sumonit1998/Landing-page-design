@@ -80,24 +80,81 @@ Version      : 1.0
 		margin: 30,
 		autoplay: false,
 		dots:false,
-        nav:true,
+    nav:true,
 		autoplayTimeout: 8500,
-		smartSpeed: 450,
-  	    navText: ['',''],
+		smartSpeed: 3000, 
+  	navText: ['',''],
 		responsive: {
 			0: {
 				items: 1,
-                nav:true
+        nav:true
 			},
 			768: {
 				items: 2,
-                nav:true
+        nav:true
 			},
 			1170: {
 				items: 3,
-                nav:true,
-                mouseDrag: false
+        nav:true,
+        mouseDrag: false
 			}
 		}
 	});
+    // project countdown function 
+    var a = 0;
+    $(window).scroll(function() {
+      var oTop = $('.gcr-counter').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.gcr-countdown').each(function() {
+          var $this = $(this),
+            countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+              countNum: countTo
+            },
+            {
+              duration: 5000,
+              easing: 'swing',
+              step: function() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function() {
+                $this.text(this.countNum);
+              }
+    
+            });
+        });
+        a = 1;
+      }
+    
+    });
+    //students review 
+    //course owl carousel
+    $('#student-review').owlCarousel( {
+      loop: true,
+      margin: 30,
+      autoplay: true,
+      dots:false,
+      nav:true,
+      autoplayTimeout: 8500,
+      smartSpeed: 3000, 
+      navText: ['',''],
+      responsive: {
+        0: {
+          items: 1,
+          nav:true
+        },
+        768: {
+          items: 2,
+          nav:true
+        },
+        1170: {
+          items: 3,
+          nav:true,
+          mouseDrag: false
+        }
+      }
+    });
+   
 })(jQuery);

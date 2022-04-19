@@ -451,6 +451,16 @@ input:focus {
   padding-bottom: 100px;
 }
 
+/*----------- set classs -------------*/
+.gcrhythm-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 11, 24, 0.9);
+}
+
 /*---------- Header -------------*/
 .sidebar-overlay {
   background-color: rgba(0, 0, 0, 0.6);
@@ -703,7 +713,7 @@ input:focus {
 
 /*------------------ gcrhythm about us ---------------*/
 .gcrhythm-about {
-  padding: 50px 0px;
+  padding: 70px 0px 60px 0px;
 }
 
 .gcrhythm-about .heading h3 {
@@ -787,6 +797,11 @@ input:focus {
 }
 
 /*-------------------- gcrhythm feature course -------------------*/
+.gcrhythm-course {
+  /*------ banner -----*/
+  /*------ course-content -----*/
+}
+
 .gcrhythm-course .course-banner {
   padding: 100px 0px;
   background-image: url(./../../images/course.jpg);
@@ -794,6 +809,8 @@ input:focus {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  /*------ Overlay -----*/
+  /*------ heading -----*/
 }
 
 .gcrhythm-course .course-banner .course-banner-overlay {
@@ -826,11 +843,13 @@ input:focus {
   position: relative;
   background: #ffffff;
   padding: 30px 0px;
+  /*------ owl-carousel -----*/
 }
 
 .gcrhythm-course .course-content .owl-carousel {
   padding: 0px 20px;
   position: relative;
+  /*------ carousel item-----*/
   /*------------------- owl carousel nav ---------------- */
 }
 
@@ -844,6 +863,9 @@ input:focus {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
   padding: 10px 10px 0px 10px;
+  /*------ carousel item head -----*/
+  /*------ carousel item body-----*/
+  /*------ carousel item footer -----*/
 }
 
 .gcrhythm-course .course-content .owl-carousel .gcr-item .item-head {
@@ -1009,6 +1031,7 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*------ carousel item social -----*/
 }
 
 .gcrhythm-course .course-content .owl-carousel .gcr-item .item-footer .trainer-profile .trainer-avatar {
@@ -1109,6 +1132,250 @@ input:focus {
   right: 0;
   bottom: 50%;
   margin-right: -5px;
+}
+
+/*------------------- Students Review -----------------*/
+.students-review {
+  padding: 70px 0px 60px 0px;
+  /*------------------- Students Review heading -----------------*/
+  /*------ carousel warp -----*/
+}
+
+.students-review .heading h3 {
+  color: #808080;
+}
+
+.students-review .heading p {
+  font-size: 16px;
+  color: #808080;
+}
+
+.students-review .carousel-warp {
+  padding: 50px 0px 20px 0px;
+  /*------ carousel -----*/
+}
+
+.students-review .carousel-warp .owl-carousel {
+  padding: 0px 20px;
+  position: relative;
+  /*------ carousel item -----*/
+  /*------------------- owl carousel nav ---------------- */
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item {
+  border: 1px solid rgba(33, 16, 52, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  /*------ carousel item head -----*/
+  /*------ carousel item body -----*/
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  /*------ rating -----*/
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-head img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-head h4 {
+  font-size: 20px;
+  line-height: 20px;
+  color: #221d50;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-head span {
+  font-size: 13px;
+  color: #221d50;
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-head .rating {
+  background-color: #ff843b;
+  color: #ffffff;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  margin-left: auto;
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-head .rating i {
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-head .rating span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-body {
+  margin-top: 20px;
+}
+
+.students-review .carousel-warp .owl-carousel .reviw-item .item-body p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #221d50;
+  text-align: justify;
+}
+
+.students-review .carousel-warp .owl-carousel .owl-nav {
+  margin-top: 0px;
+}
+
+.students-review .carousel-warp .owl-carousel .owl-nav button {
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 2.5px solid #f05200;
+  border-left: 2.5px solid #f05200;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  text-decoration: none;
+  color: transparent;
+}
+
+.students-review .carousel-warp .owl-carousel .owl-nav button:hover {
+  border-top: 2.5px solid #000028;
+  border-left: 2.5px solid #000028;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.students-review .carousel-warp .owl-carousel .owl-nav .owl-prev {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 0;
+  bottom: 40%;
+  margin-left: -5px;
+}
+
+.students-review .carousel-warp .owl-carousel .owl-nav .owl-next {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  right: 0;
+  bottom: 40%;
+  margin-right: -5px;
+}
+
+/*------------------- Students Review -----------------*/
+/*--------- coundown project ------------*/
+.gcrhythm-coundown-project {
+  padding: 70px 0px;
+  background-image: url(./../../images/coun-project.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.gcrhythm-coundown-project .gcr-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gcrhythm-coundown-project .gcr-counter .gcr-count-up {
+  text-align: center;
+}
+
+.gcrhythm-coundown-project .gcr-counter .gcr-count-up p {
+  font-size: 40px;
+  color: #ff843b;
+  margin-bottom: 0px;
+}
+
+.gcrhythm-coundown-project .gcr-counter .gcr-count-up .gcr-countdown {
+  font-size: 36px;
+  color: #ff843b;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.gcrhythm-coundown-project .gcr-counter .gcr-count-up h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*----------------------- gcrhythm question section ---------------*/
+.gcrhythm-question {
+  padding: 40px 20px;
+  background-color: #ff843b;
+}
+
+.gcrhythm-question h4 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.gcrhythm-question p {
+  color: #ffffff;
+}
+
+.gcrhythm-question a {
+  background-color: #000028;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border: 2px solid #000028;
+}
+
+.gcrhythm-question a p {
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+}
+
+.gcrhythm-question a:hover {
+  opacity: 1;
+  background-color: transparent;
+  border: 2px solid #000028;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 /*--------------- gcrhythm footer section ------------*/
